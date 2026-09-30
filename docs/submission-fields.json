@@ -52,7 +52,9 @@
     "github_repository": "https://github.com/diveyreadytodive-star/secondline-voice-agent",
     "github_main_head_at_draft": "30abe1bbe537c6d972e520cb5208f3ac161fdeb1",
     "demo_platform": "Vercel",
-    "application_url": "https://secondline-voice-agent.vercel.app"
+    "application_url": "https://secondline-voice-agent.vercel.app",
+    "entered_in_step3_form": false,
+    "entry_blocked_until_step2_video_and_slides_accepted": true
   },
   "uploads": {
     "cover_image": {
@@ -106,6 +108,7 @@
     "step2_next_validation": {
       "video": "Required",
       "slide_presentation": "Required"
-    }
+    },
+    "step2_next_validation_observed_by_root": true
   }
 }
