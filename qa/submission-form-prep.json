@@ -1,0 +1,33 @@
+{
+  "observed_on": "2026-09-30 KST",
+  "source": "signed_in_Chrome_accessibility_and_DOM_snapshots_via_CUA",
+  "team": "blancolabs",
+  "form_url": "https://lablab.ai/ai-hackathons/assemblyai-voice-agent-hackathon/blancolabs/submission",
+  "step1": {
+    "title_saved": "SecondLine",
+    "title_characters": 10,
+    "short_characters": 218,
+    "initial_long_characters": 1170,
+    "final_long_copy_ready_characters": 1193,
+    "final_long_characters_saved": 1193,
+    "final_long_sync_pending": false,
+    "last_saved_after_copy_sync_display": "오후 6:31:51",
+    "categories": ["Education", "Security", "Voice Assistant"],
+    "technologies": ["Vercel"],
+    "matching_AssemblyAI_Voice_Agent_API_tag_offered": false,
+    "next_to_media_succeeded": true
+  },
+  "step2": {
+    "cover": "native_file_picker_selected_cover_final_png_full_16_9_crop_saved",
+    "cover_acceptance": "image_visible_in_media_step_completion_50_percent_last_saved_18_25_30",
+    "slide_input_id": "presentationLink-fileUpload",
+    "slides": "file_ready_upload_pending",
+    "video_input_id": "videoLink-fileUpload",
+    "video": "direct_file_upload_blank",
+    "external_video_url_required": false
+  },
+  "step3": "blocked_by_step2_video_and_slide_required_validation_public_urls_prepared_locally",
+  "screenshot": "assets/screenshots/submission-draft-prepared.jpg",
+  "final_submit_performed": false,
+  "foreground_picker_coordination": "user_switched_to_live_voice_session_asked_whether_filming_before_further_native_picker_actions"
+}

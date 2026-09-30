@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "contest": "AssemblyAI - Voice Agent Hackathon",
+  "team": {
+    "name": "blancolabs",
+    "public_url": "https://lablab.ai/ai-hackathons/assemblyai-voice-agent-hackathon/blancolabs",
+    "account_handle_user_confirmed": "losblancos339",
+    "discord_registration": "unverified",
+    "profile_completion": "pending_live_form_check"
+  },
+  "step1": {
+    "input_names": {
+      "title": "title",
+      "short_description": "shortDescription",
+      "long_description": "description"
+    },
+    "title": "SecondLine",
+    "short_description": "Practice a pause before a pressured code or payment request. SecondLine uses a fictional voice scenario to help you say a boundary aloud, choose an independent contact route, and review transcript-linked practice cues.",
+    "long_description": "SecondLine gives individuals a short way to rehearse a safe pause before an urgent request for a one-time code or payment. In a clearly fictional English scenario, an agent built on the AssemblyAI Voice Agent API speaks one pressure line. The learner answers aloud with a boundary and explains how they would verify the claim through an official app or contact route found independently. The browser shows the final transcript turns from that exercise. A deterministic reflection quotes captured pressure words, highlights only practice steps supported by the learner's response, and suggests a next try. It does not score the caller or decide whether a real request is genuine. The API key stays on the server; the browser uses a short-lived token. The public prototype uses real AssemblyAI voice infrastructure and has completed a synthetic browser-microphone test. SecondLine never joins a real call, contacts an institution, requests an actual code, or moves money. Financial-literacy educators could use short exercises like this to help learners practice a response in their own words. That is a use hypothesis: we have not measured learning outcomes, fraud prevention, or real adoption.",
+    "counts": {
+      "title_characters": 10,
+      "short_characters": 218,
+      "long_characters": 1193,
+      "long_words": 187
+    },
+    "constraints_observed": {
+      "title_characters_min": 5,
+      "title_characters_max": 50,
+      "short_characters_min": 50,
+      "short_characters_max": 255,
+      "long_characters_min": 600,
+      "long_characters_max": 2000,
+      "long_words_min": 100
+    },
+    "categories_selected_in_live_form": [
+      "Education",
+      "Security",
+      "Voice Assistant"
+    ],
+    "technologies_selected_in_live_form": [
+      "Vercel"
+    ],
+    "required_provider_not_available_as_matching_technology_tag": "AssemblyAI Voice Agent API",
+    "provider_named_in_description": true,
+    "autosave_observed_by_root": true,
+    "exact_final_copy_saved_in_form": true,
+    "observed_saved_long_characters_before_replacement": 1170,
+    "final_long_characters_saved_in_form": 1193
+  },
+  "optional_additional_information": "The AssemblyAI Voice Agent API powers the live fictional exercise. A hosted browser session processed synthetic English speech and produced user and agent transcripts plus a practice report. The offline typed walkthrough is visibly separate. The report uses local rules over captured final turns and is not a fraud or identity verdict. No real calls, transfers, or private codes are used.",
+  "public_links": {
+    "github_repository": "https://github.com/diveyreadytodive-star/secondline-voice-agent",
+    "github_main_head_at_draft": "30abe1bbe537c6d972e520cb5208f3ac161fdeb1",
+    "demo_platform": "Vercel",
+    "application_url": "https://secondline-voice-agent.vercel.app"
+  },
+  "uploads": {
+    "cover_image": {
+      "path": "/Users/blanco/Documents/ChatGPT/audit/assemblyai-voice-agent/assets/cover-final.png",
+      "mime_type": "image/png",
+      "dimensions": "1600x900",
+      "status": "accepted_in_live_form_after_full_16_by_9_crop_save",
+      "upload_method": "direct_file_upload_then_crop_modal_save",
+      "crop_modal_save_required": true,
+      "accepted_ui_evidence": "image_visible_progress_50_percent_last_saved_display_6:25:30"
+    },
+    "slide_presentation": {
+      "path": "/Users/blanco/Documents/ChatGPT/audit/assemblyai-voice-agent/assets/slides/secondline-pitch-v3.pdf",
+      "mime_type": "application/pdf",
+      "pages": 6,
+      "status": "local_file_ready_not_attached_form_reports_required",
+      "upload_method": "direct_file_upload",
+      "form_input_id": "presentationLink-fileUpload"
+    },
+    "video_presentation": {
+      "required_format": "MP4",
+      "max_duration_seconds": 300,
+      "max_size_bytes_exclusive": 300000000,
+      "status": "human_mp4_missing_form_reports_required",
+      "source": {
+        "file": null
+      },
+      "upload_method": "direct_file_upload",
+      "form_input_id": "videoLink-fileUpload",
+      "external_video_url_required": false
+    }
+  },
+  "evidence_boundary": {
+    "hosted_real_provider_with_synthetic_browser_microphone": true,
+    "human_microphone_verified": false,
+    "audible_speaker_playback_verified": false,
+    "spoken_interruption_verified": false,
+    "measured_learning_or_fraud_prevention": false
+  },
+  "final_submit_performed": false,
+  "live_form_progress": {
+    "step1_next_advanced_to_step2_without_validation_errors": true,
+    "progress_after_step1_percent": 41,
+    "progress_after_cover_percent": 50,
+    "slide_upload_accepted": false,
+    "video_upload_accepted": false,
+    "step3_visited": false,
+    "final_submit_performed": false,
+    "cover_last_saved_observed_display": "6:25:30",
+    "last_saved_after_final_copy_display": "오후 6:31:51",
+    "step2_next_validation": {
+      "video": "Required",
+      "slide_presentation": "Required"
+    }
+  }
+}

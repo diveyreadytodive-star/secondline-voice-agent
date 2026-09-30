@@ -12,4 +12,5 @@ coverage/
 *.log
 .codex-finalizer/
 .build/
+output/submission-ready/
 .vercel

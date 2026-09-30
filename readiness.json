@@ -17,6 +17,21 @@
     "discord_registration": "unverified",
     "submission_page_public_status": "no_submission"
   },
+  "submission_form": {
+    "url": "https://lablab.ai/ai-hackathons/assemblyai-voice-agent-hackathon/blancolabs/submission",
+    "signed_in_access_observed": true,
+    "status": "draft_saved_not_submitted",
+    "latest_observed_completion_percent": 50,
+    "saved_at_kst": "2026-09-30T18:31:51+09:00",
+    "title_short_description_categories_technology": "entered_and_saved",
+    "long_description": "final_1193_character_187_word_copy_entered_and_saved",
+    "cover_image": "uploaded_crop_saved_and_visible_in_draft",
+    "slides_pdf": "local_ready_attachment_pending_native_file_picker",
+    "video": "direct_mp4_file_upload_required_human_recording_pending",
+    "technical_links": "prepared_locally_step3_requires_valid_video_and_slides_before_access",
+    "draft_screenshot": "assets/screenshots/submission-draft-prepared.jpg",
+    "final_submit_performed": false
+  },
   "technical": {
     "required_provider": "AssemblyAI Voice Agent API",
     "server_side_token_route": "implemented_and_mock_contract_tested",
@@ -59,6 +74,7 @@
     "slides_status": "six_pages_rendered_and_text_extraction_verified",
     "video_mp4": "user_pending",
     "english_form_copy": "docs/submission-draft.md",
+    "submission_packet": "output/secondline-submission-ready.zip",
     "final_submission": "not_submitted",
     "provider_e2e_evidence_deployment_id": "dpl_HNsm34EQF4vnunymcWTFVLKrN2C5",
     "final_deployment_delta": "Only session-ready status badge changed after hosted synthetic E2E; final health and served JavaScript verified"
