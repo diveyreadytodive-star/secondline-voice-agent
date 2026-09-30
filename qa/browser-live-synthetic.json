@@ -1,0 +1,11 @@
+{
+  "input_kind": "synthetic_fake_browser_microphone_not_human",
+  "page_errors": [],
+  "evidence_method": "manual_visual_review_of_saved_screenshot_after_automated_synthetic_browser_session",
+  "screenshot": "assets/screenshots/desktop-live-synthetic.jpg",
+  "observed_user_transcript": "Pause. I will not share a code. I will hang up and use the official app I open myself.",
+  "observed_report": "Urgency and sensitive-detail quotes plus three practiced-boundary strengths",
+  "human_microphone_verified": false,
+  "spoken_interruption_verified": false,
+  "note": "Initial prompt snapshot; hosted-browser-live-synthetic.json records the corrected concluding response."
+}

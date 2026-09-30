@@ -1,0 +1,12 @@
+{
+  "url": "https://secondline-voice-agent.vercel.app",
+  "deployment_id": "dpl_HNsm34EQF4vnunymcWTFVLKrN2C5",
+  "checked_at": "2026-09-30T08:27:01.400Z",
+  "input_kind": "synthetic_fake_browser_microphone_not_human",
+  "transcript": "CoachThis is a fictional exercise in English. A caller says, 'Your account is frozen and I need a one-time code immediately.' What do you say?YouPause. I will not share a code. I will hang up and use the official app I open myself.CoachPause. You set a strong boundary by refusing the code and identified a safe way to verify by using your own official app. Since you have both a boundary and a verification method, we are finished with this drill.",
+  "assessment": "Your response shows a useful safety boundary. Practice stating it clearly and following through.Exact pressure words transcribedUrgencyThis is a fictional exercise in English. A caller says, 'Your account is frozen and I need a one-time code immediately.' What do you say?A deadline can reduce time to verify.Sensitive detailThis is a fictional exercise in English. A caller says, 'Your account is frozen and I need a one-time code immediately.' What do you say?Codes and passwords should not be read out during an unsolicited exchange.Your practiced boundaryYou practiced pausing before action.You practiced independent verification.You practiced protecting money or private information.One more trySay the full next step in one sentence: I will pause and verify through a contact method I already know.Keyword cues in the supplied fictional practice transcript; not a fraud determination.",
+  "message": "Live exercise ended. Review only the words actually transcribed.",
+  "page_errors": [],
+  "human_microphone_verified": false,
+  "spoken_interruption_verified": false
+}

@@ -1,0 +1,31 @@
+{
+  "input_kind": "synthetic_speech_not_human_microphone",
+  "checked_at": "2026-09-30T08:12:17.631Z",
+  "token_http_status": 200,
+  "events": {
+    "session.updated": 1,
+    "session.ready": 1,
+    "reply.started": 2,
+    "reply.audio": 1770,
+    "transcript.agent.delta": 58,
+    "transcript.agent": 2,
+    "reply.done": 2,
+    "input.speech.started": 1,
+    "transcript.user.delta": 5,
+    "transcript.user": 1,
+    "input.speech.stopped": 1,
+    "session.ended": 1
+  },
+  "user_transcripts": [
+    "Pause. I will not share a code. I will hang up and use the official app I opened myself."
+  ],
+  "agent_transcripts": [
+    "This is a fictional exercise in English. A caller says, 'Your account is frozen and I need a one-time code immediately.' What do you say?",
+    "That is a perfect boundary. You identified the risk and chose a secure, independent way to verify the situation. Now, say that boundary out loud as if you were speaking to the caller."
+  ],
+  "audio_chunks": 1770,
+  "human_microphone_verified": false,
+  "spoken_interruption_verified": false,
+  "close_code": 1000,
+  "passed": true
+}

@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#101a1b" />
+    <meta name="description" content="SecondLine helps you rehearse a pause and an independent check before you send money or private information." />
+    <title>SecondLine — rehearse the pause</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to exercise</a>
+    <div class="shell">
+      <header class="masthead">
+        <div class="brand" aria-label="SecondLine home">
+          <span class="brand-icon" aria-hidden="true"><span></span><span></span></span>
+          <span class="brand-name">SecondLine<span class="brand-dot">.</span></span>
+        </div>
+        <div class="masthead-right">
+          <span class="edition">VOICE PRACTICE / 001</span>
+          <span id="providerStatus" class="provider-status" role="status" aria-live="polite"><i></i> Checking voice service</span>
+        </div>
+      </header>
+
+      <main id="main">
+        <section class="intro" aria-labelledby="pageTitle">
+          <div class="intro-label"><span class="short-line"></span> A small pause changes the next move</div>
+          <div class="intro-grid">
+            <div>
+              <h1 id="pageTitle">Rehearse the <em>pause</em><span class="period">.</span></h1>
+              <p class="lede">When a caller demands a transfer, a code, or a quick answer, practice one short response before the real moment arrives. The live voice exercise is in English.</p>
+              <a class="jump-link" href="#sessionCard">Go to the 60-second exercise <span aria-hidden="true">↘</span></a>
+            </div>
+            <aside class="intro-note" aria-label="Exercise boundaries">
+              <div class="note-mark">NOTE / 01</div>
+                <p>This is a fictional exercise. It never calls another person or determines whether a real call is fraudulent. Do not enter real codes or account details.</p>
+            </aside>
+          </div>
+        </section>
+
+        <div class="workbench">
+          <section class="exercise" aria-labelledby="exerciseTitle">
+            <div class="section-heading">
+              <div class="section-index">01 / REHEARSAL</div>
+              <div class="section-title-wrap">
+                <h2 id="exerciseTitle">Choose the pressure.</h2>
+                <p>Select a fictional prompt, then answer without giving away money or private details.</p>
+              </div>
+            </div>
+
+            <div class="scenario-grid" role="group" aria-label="Fictional practice scenarios">
+              <button class="scenario is-selected" type="button" data-scenario="courier" aria-pressed="true">
+                <span class="scenario-no">SCENE 01</span>
+                <span class="scenario-title">A delivery fee</span>
+                <span class="scenario-copy">A caller asks for a link payment to release a parcel.</span>
+                <span class="scenario-arrow" aria-hidden="true">↗</span>
+              </button>
+              <button class="scenario" type="button" data-scenario="bank" aria-pressed="false">
+                <span class="scenario-no">SCENE 02</span>
+                <span class="scenario-title">An account code</span>
+                <span class="scenario-copy">A caller says you must share a one-time code to restore access.</span>
+                <span class="scenario-arrow" aria-hidden="true">↗</span>
+              </button>
+              <button class="scenario" type="button" data-scenario="family" aria-pressed="false">
+                <span class="scenario-no">SCENE 03</span>
+                <span class="scenario-title">A family emergency</span>
+                <span class="scenario-copy">An unfamiliar number urges you to send money now.</span>
+                <span class="scenario-arrow" aria-hidden="true">↗</span>
+              </button>
+            </div>
+
+            <div class="session-card" id="sessionCard">
+              <div class="session-topline">
+                <div><span class="live-dot" aria-hidden="true"></span><span id="sessionLabel">READY TO PRACTICE</span></div>
+                <span id="sessionCounter">00:00</span>
+              </div>
+              <div class="session-body">
+                <div class="session-heading-row">
+                  <div>
+                    <div class="eyebrow">THE EXERCISE</div>
+                    <h3 id="sessionTitle">A delivery fee</h3>
+                  </div>
+                  <div class="waveform" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+                </div>
+                <p class="session-instruction">Keep it brief. End the conversation. Verify through a number or app you find yourself.</p>
+                <div id="transcript" class="transcript" role="log" aria-label="Practice transcript" aria-live="polite">
+                  <div class="transcript-empty"><span class="empty-glyph" aria-hidden="true">“</span><p>Pressure is easier to spot when the words are in front of you. Start an exercise to see the exchange here.</p></div>
+                </div>
+                <div id="typedResponse" class="typed-response" hidden>
+                  <label for="responseInput">Your short reply</label>
+                  <div class="response-row">
+                    <input id="responseInput" type="text" maxlength="240" autocomplete="off" placeholder="I will verify through the official app." />
+                    <button id="sendResponse" type="button" class="send-button">Send reply <span aria-hidden="true">↗</span></button>
+                  </div>
+                  <p class="field-hint">Typed input in the scripted walkthrough. No voice transcription is claimed.</p>
+                </div>
+              </div>
+              <div class="session-actions">
+                <button id="startLive" class="action-primary" type="button"><span class="microphone" aria-hidden="true">◉</span> Start live voice rehearsal <span class="action-arrow" aria-hidden="true">↗</span></button>
+                <button id="startScripted" class="action-secondary" type="button">Offline typed walkthrough <span aria-hidden="true">→</span></button>
+                <button id="pauseSession" class="action-pause" type="button" aria-pressed="false" hidden>Mute coach audio</button>
+                <button id="stopSession" class="action-stop" type="button" hidden>End exercise <span aria-hidden="true">×</span></button>
+              </div>
+              <div id="sessionMessage" class="session-message" role="status" aria-live="polite">Live voice needs an AssemblyAI session and microphone. The offline walkthrough is typed and uses no voice API.</div>
+            </div>
+          </section>
+
+          <aside class="field-guide" aria-label="Practice guide">
+            <div class="guide-topline"><span>SECOND LINE / FIELD GUIDE</span><span aria-hidden="true">↘</span></div>
+            <div class="guide-block">
+              <span class="guide-number">A</span>
+              <div><h3>Make a little space.</h3><p>“I need to stop this conversation and check independently.”</p></div>
+            </div>
+            <div class="guide-block">
+              <span class="guide-number">B</span>
+              <div><h3>Use your own route.</h3><p>Open the official app or find the published number yourself. Do not use the caller’s link or callback number.</p></div>
+            </div>
+            <div class="guide-block">
+              <span class="guide-number">C</span>
+              <div><h3>Keep secrets out.</h3><p>Do not share a one-time code, password, ID details, or send money while the claim is unverified.</p></div>
+            </div>
+            <div class="guide-bottom"><span class="asterisk" aria-hidden="true">✳</span><p>The aim is a repeatable response, not a risk score.</p></div>
+          </aside>
+        </div>
+
+        <section class="review" id="reviewSection" aria-labelledby="reviewTitle">
+          <div class="section-heading review-heading">
+            <div class="section-index">02 / REFLECTION</div>
+            <div class="section-title-wrap"><h2 id="reviewTitle">What stood out?</h2><p>Look at the exact pressure cues, then say what you would check next.</p></div>
+          </div>
+          <div class="review-grid">
+            <div class="evidence-panel">
+              <div class="panel-heading"><span>EVIDENCE FROM THIS EXERCISE</span><span class="panel-icon" aria-hidden="true">↗</span></div>
+              <div id="assessment" class="assessment"><p class="muted">Complete a walkthrough, or inspect a phrase below, to see the words and coaching cues here.</p></div>
+            </div>
+            <div class="teachback-panel">
+              <div class="panel-heading"><span>YOUR NEXT MOVE</span><span class="panel-icon" aria-hidden="true">↗</span></div>
+              <label for="teachbackInput">How will you verify the claim independently?</label>
+              <textarea id="teachbackInput" rows="3" maxlength="320" placeholder="I will end the call, open the official app myself, and check there…"></textarea>
+              <button id="saveTeachback" class="teachback-button" type="button">Save my response <span aria-hidden="true">→</span></button>
+              <div id="teachbackSaved" class="saved-note" role="status" aria-live="polite"></div>
+            </div>
+          </div>
+        </section>
+
+        <details class="phrase-check" id="phraseCheck">
+          <summary><span><span class="section-index">03 / OPTIONAL</span><strong>Inspect a phrase</strong><small>Practice spotting exact pressure words in a fictional or paraphrased message.</small></span><span class="summary-plus" aria-hidden="true">+</span></summary>
+          <div class="phrase-content">
+            <label for="phraseInput">Words to inspect</label>
+            <textarea id="phraseInput" rows="3" maxlength="1000" placeholder="For practice: You must move the money right now or your account will be frozen."></textarea>
+            <div class="phrase-actions"><button id="samplePhrase" type="button">Use fictional sample</button><button id="inspectPhrase" type="button">Inspect words <span aria-hidden="true">↗</span></button></div>
+            <p id="phraseMessage" class="field-hint" role="status" aria-live="polite">This checks wording for coaching cues. It cannot verify a caller’s identity or decide whether a claim is genuine.</p>
+          </div>
+        </details>
+      </main>
+      <footer class="footer"><span>SECONDLINE / VOICE PRACTICE</span><span>Fictional exercises only · No calls placed · No fraud verdicts</span><span>LIVE MODE · ASSEMBLYAI VOICE AGENT API</span></footer>
+    </div>
+  </body>
+</html>

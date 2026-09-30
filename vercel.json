@@ -1,0 +1,8 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "outputDirectory": "secondline/web",
+  "rewrites": [
+    { "source": "/api/voice-token", "destination": "/api/voice_token" }
+  ]
+}

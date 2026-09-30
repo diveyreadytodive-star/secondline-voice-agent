@@ -1,0 +1,78 @@
+{
+  "event": "AssemblyAI - Voice Agent Hackathon",
+  "snapshot_at_kst": "2026-09-30",
+  "deadline_utc": "2026-09-30T15:00:00Z",
+  "deadline_kst": "2026-10-01T00:00:00+09:00",
+  "internal_package_target_kst": "2026-09-30T23:00:00+09:00",
+  "submission_ready": false,
+  "reason_not_ready": [
+    "Human microphone quality, audible playback, and spoken interruption await a recording rehearsal",
+    "Human-made MP4 video has not been filmed or uploaded",
+    "Final submission form has not been completed"
+  ],
+  "participation": {
+    "team_url": "https://lablab.ai/ai-hackathons/assemblyai-voice-agent-hackathon/blancolabs",
+    "team_and_account": "user_confirmed_and_publicly_corroborated",
+    "human_members_visible": 1,
+    "discord_registration": "unverified",
+    "submission_page_public_status": "no_submission"
+  },
+  "technical": {
+    "required_provider": "AssemblyAI Voice Agent API",
+    "server_side_token_route": "implemented_and_mock_contract_tested",
+    "browser_microphone_websocket_route": "verified_with_synthetic_browser_microphone_and_real_provider",
+    "live_provider_token_observed": true,
+    "live_session_ready_observed": true,
+    "live_transcript_and_reply_observed": true,
+    "spoken_interruption_observed": false,
+    "assemblyai_key_available": true,
+    "key_storage": "ignored_local_env_and_sensitive_vercel_production_environment",
+    "synthetic_input_only": true,
+    "human_microphone_verified": false,
+    "audible_speaker_playback_verified": false,
+    "local_unit_http_tests": "16_passed",
+    "public_token_result": "HTTP_200_real_short_lived_provider_token",
+    "language_for_live_demo": "English",
+    "public_keyed_endpoint_cost_guard": "in_memory_only_not_durable_across_serverless_instances"
+  },
+  "product_evidence": {
+    "local_offline_two_turn_walkthrough": "verified_by_lead",
+    "hosted_offline_two_turn_walkthrough": "verified_by_lead",
+    "desktop_mobile_screenshots": "captured_and_reviewed",
+    "commercial_design_references": "two_directly_observed",
+    "direct_hackathon_competitor_overlap": "Pretext voice rehearsal and quoted debrief; documented in judge strategy"
+  },
+  "public_artifacts": {
+    "demo_url": "https://secondline-voice-agent.vercel.app",
+    "demo_status": "public_real_provider_flow_verified_with_synthetic_browser_microphone",
+    "deployment_id": "dpl_uRQoYZnBRfPkbKJh6rLwELt7XadN",
+    "latest_public_http_check": "home_200_health_200_assess_200_valid_token_request_200",
+    "github_url": "https://github.com/diveyreadytodive-star/secondline-voice-agent",
+    "github_status": "created_pending_first_push",
+    "remote_head_verified": false,
+    "license": "MIT",
+    "cover_image": "assets/cover-final.png",
+    "cover_dimensions": "1600x900",
+    "slides_pdf": "assets/slides/secondline-pitch-v3.pdf",
+    "slides_pptx": "assets/slides/secondline-pitch-v3.pptx",
+    "slides_status": "six_pages_rendered_and_text_extraction_verified",
+    "video_mp4": "user_pending",
+    "english_form_copy": "docs/submission-draft.md",
+    "final_submission": "not_submitted",
+    "provider_e2e_evidence_deployment_id": "dpl_HNsm34EQF4vnunymcWTFVLKrN2C5",
+    "final_deployment_delta": "Only session-ready status badge changed after hosted synthetic E2E; final health and served JavaScript verified"
+  },
+  "source_evidence": [
+    "docs/official-rules.md",
+    "docs/judge-strategy.md",
+    "docs/requirements-checklist.md",
+    "qa/test-report.md",
+    "review/slide-review.md",
+    "decisions/01-product-review.md",
+    "decisions/02-integration-review.md",
+    "decisions/03-judge-demo-review.md",
+    "review/provider-proof-delta.md",
+    "qa/live-provider-smoke.json",
+    "qa/hosted-browser-live-synthetic.json"
+  ]
+}

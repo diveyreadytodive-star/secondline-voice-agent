@@ -1,0 +1,36 @@
+# AssemblyAI Voice Agent Hackathon: official rules and current gates
+
+Rechecked 2026-09-30 KST in the rendered [event page](https://lablab.ai/ai-hackathons/assemblyai-voice-agent-hackathon), the [lablab.ai Hackathon Rule Book](https://lablab.ai/hackathon-rules), and the [submission walkthrough](https://lablab.ai/ai-articles/hackathon-guidelines). The event's live form is authoritative if it differs from general guidance.
+
+## Registration and submission have different gates
+
+| Gate | Published condition | Directly observed status | Evidence |
+| --- | --- | --- | --- |
+| Registration | Event says registration stays open for the entire build window; teams of **1–6 humans** may participate. The event asks participants to register on lablab.ai and its Discord server. | On 2026-09-30 KST the public event page showed **Sign up** at the hero and sticky footer; clicking the hero control changed the URL to `?enroll=true`. The user subsequently confirmed that the [public blancolabs team page](https://lablab.ai/ai-hackathons/assemblyai-voice-agent-hackathon/blancolabs) and member `losblancos339` are theirs. That page visibly lists one member. Treat enrollment and one-person team as **user-confirmed with public-page corroboration**; Discord registration is unverified. AI agents are not human entrants. | [Event page](https://lablab.ai/ai-hackathons/assemblyai-voice-agent-hackathon); [public team page](https://lablab.ai/ai-hackathons/assemblyai-voice-agent-hackathon/blancolabs); [participation walkthrough](https://lablab.ai/ai-articles/hackathon-guidelines) |
+| Project submission | The event page shows **2026-09-30 15:00 UTC = 2026-10-01 00:00 KST** and marks this as **End of Submissions!** | Deadline is still in the published page. Target a fully recordable, reviewed package by **2026-09-30 23:00 KST**, one hour early. The public team page says **“Team Leader hasn't made a submission yet.”** | [Event page and schedule](https://lablab.ai/ai-hackathons/assemblyai-voice-agent-hackathon); [public team page](https://lablab.ai/ai-hackathons/assemblyai-voice-agent-hackathon/blancolabs) |
+| Late manual submission | General Rule Book mentions a six-hour post-event manual path only with valid reasons and **prior organizer or mentor approval**. | No approval exists; treat the normal deadline as binding. | [Hackathon Rule Book](https://lablab.ai/hackathon-rules) |
+
+The event describes itself as **fully online** and says people can join from anywhere. Neither its published schedule nor the Rule Book lists mandatory in-person attendance or a later live finalist pitch. A video presentation and PDF slide presentation are required. The absence of a listed live stage is not a guarantee that organizers cannot contact finalists later. [Event page](https://lablab.ai/ai-hackathons/assemblyai-voice-agent-hackathon); [Rule Book](https://lablab.ai/hackathon-rules).
+
+## Required technical path
+
+A working voice agent must use **AssemblyAI Voice Agent API**, or **AssemblyAI Realtime Speech-to-Text over WebSocket with the entrant's own agent orchestration**. A static or local scripted transcript does not demonstrate this condition. The event describes Voice Agent API as an end-to-end connection with STT, LLM routing, speech output, turn-taking and voice activity detection. [Event challenge](https://lablab.ai/ai-hackathons/assemblyai-voice-agent-hackathon); [Voice Agent API documentation](https://www.assemblyai.com/docs/voice-agents/voice-agent-api).
+
+The user subsequently supplied an AssemblyAI key for local server use. A real provider smoke test minted a token (HTTP 200), reached `session.ready`, sent synthetic English speech, received a user transcript plus agent text/audio, and closed normally; see [`qa/live-provider-smoke.json`](../qa/live-provider-smoke.json). After the user explicitly authorized hosted key configuration, a production redeploy also completed a [real AssemblyAI browser session with a synthetic browser microphone](../qa/hosted-browser-live-synthetic.json): token 200, user/agent transcripts, quote-linked report, clean end, and no page errors. Both runs are real provider usage with **synthetic speech**, not evidence of a human microphone or spoken interruption. The earlier automatic approval rejection for the Vercel environment action was resolved by the user's later direct authorization. The provider's [current supported-language matrix](https://www.assemblyai.com/docs/voice-agents/voice-agent-api/supported-languages) lists English for both input and output, while Korean is absent from both. Use **English spoken input and output** for the Voice Agent API filming path; do not promise a Korean voice exercise on this path.
+
+The public event page offers a [sponsor credit sign-up link](https://www.assemblyai.com/dashboard/signup?utm_source=event&utm_medium=credit-grant&utm_campaign=lablab_virtual_hackathon). Its activation, account status, and credit amount are unverified. Accessing a signed-in AssemblyAI dashboard was previously rejected by automatic approval review because it could expose private account information; no alternative access was attempted.
+
+## Submission inventory
+
+The event requires project **title, short description, long description, technology/category tags, cover image, video presentation, slide presentation, public GitHub repository, demo application platform, and application URL**. Its five winner awards are **$1,000 cash plus $1,000 AssemblyAI credits each**. The judging criteria are Application of Technology, Presentation, Business Value, and Originality; **no numeric weights are published**. Submissions must be original and MIT-compliant. Prize eligibility and availability have conditions; distribution may take up to 90 days. [Event page](https://lablab.ai/ai-hackathons/assemblyai-voice-agent-hackathon).
+
+The general [Rule Book](https://lablab.ai/hackathon-rules) calls for a **16:9 PNG or JPG cover, MP4 video, PDF slides, public GitHub repository, and interactive application URL**; it names Streamlit, Replit, or Vercel as demo platforms. The [submission walkthrough](https://lablab.ai/ai-articles/hackathon-guidelines) states a **50-character title limit, 255-character short-description limit, 100-word minimum long description, and video within 5 minutes and under 300 MB**. The [general guide](https://lablab.ai/guide/ai-hackathons) also says the prototype must be usable online. Verify actual form validation before final entry.
+
+## Participation state, as confirmed by the user
+
+- The user identifies `blancolabs` as their team and `losblancos339` as their account; the public team page shows one member and no submission. Discord participation remains unverified.
+- Local and public production AssemblyAI token/WebSocket/transcript/audio paths passed with synthetic speech. Human microphone, audible browser playback, and spoken interruption remain unverified.
+- The user will film and upload the MP4 themselves. Do not submit without it; stop before the final event submission action.
+- This project uses fictional scenarios and will not call real people, initiate transfers, or claim fraud detection accuracy.
+
+All completed artifacts and remaining conditions are tracked in [requirements-checklist.md](requirements-checklist.md) and the root `readiness.json`.
