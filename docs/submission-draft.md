@@ -24,7 +24,7 @@ SecondLine is a short spoken rehearsal for a moment when someone claims urgent a
 | Form field | Value/evidence |
 | --- | --- |
 | Team | [blancolabs public page](https://lablab.ai/ai-hackathons/assemblyai-voice-agent-hackathon/blancolabs); user confirmed ownership of account `losblancos339` |
-| GitHub repository URL | Pending public remote verification |
+| GitHub repository URL | [https://github.com/diveyreadytodive-star/secondline-voice-agent](https://github.com/diveyreadytodive-star/secondline-voice-agent) — public main HEAD `be5d5245c9c9a2fb12383d9cc3b4e84bc0752cc5` verified; later status commit may advance HEAD |
 | Demo application platform | Vercel; production key configured and synthetic browser/provider path verified |
 | Application URL | [https://secondline-voice-agent.vercel.app](https://secondline-voice-agent.vercel.app) — hosted fake-microphone AssemblyAI flow verified; human microphone/playback/interruption still unverified |
 | Cover image | `../assets/cover-final.png` — 1600×900 PNG, visually inspected; form upload pending |
